@@ -25,6 +25,8 @@ const LoginScreen = ({ navigation }) => {
       responseType: ResponseType.Token,
       clientId: "64c50396a4414f59a79012553ca2ddbe",
       scopes: [
+        "playlist-modify-public",
+        "playlist-modify-private",
         "user-read-currently-playing",
         "user-read-recently-played",
         "user-read-playback-state",
@@ -32,7 +34,7 @@ const LoginScreen = ({ navigation }) => {
         "user-modify-playback-state",
         "streaming",
         "user-read-email",
-        "user-read-private",
+        "user-read-private"
       ],
       // In order to follow the "Authorization Code Flow" 
       // to fetch token after authorizationEndpoint
